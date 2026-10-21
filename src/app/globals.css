@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-carvao antialiased; }
+h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.01em; }
+:focus-visible { outline: 3px solid theme('colors.trator'); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+@keyframes liftMovement {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-28px);
+  }
+}
+
+.animate-lift {
+  animation: liftMovement 5s ease-in-out infinite;
+}
+
