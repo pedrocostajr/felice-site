@@ -3,11 +3,13 @@
 
 export const SITE = {
   nome: 'Felice Locações',
+  razaoSocial: 'Felice Locações Ltda.',
+  cnpj: '47.240.665/0001-36',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.felicelocacoes.com.br',
   gtmId: process.env.NEXT_PUBLIC_GTM_ID ?? 'GTM-WBHQPBNX',
   whatsapp: '5554993402000', // número único usado hoje no site todo
   whatsappExibicao: '(54) 99340-2000',
-  logo: 'https://www.felicelocacoes.com.br/wp-content/uploads/2025/02/cropped-LOGO_FELICE_CV_NOVA.png',
+  logo: '/images/logo.png',
   descricao:
     'Locação de máquinas e equipamentos para construção civil em Gramado, Canela e Serra Gaúcha. Andaimes, plataformas elevatórias, geradores, betoneiras, compactadores e mais, com entrega na obra.',
   horario: 'Segunda a Sexta: 07:30 às 11:45 e 13:00 às 18:00 | Sábados: 07:30 às 11:45',

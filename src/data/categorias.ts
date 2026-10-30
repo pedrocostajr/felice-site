@@ -27,7 +27,6 @@ export type Categoria = {
   faq: { p: string; r: string }[];
 };
 
-const IMG = 'https://www.felicelocacoes.com.br/wp-content/uploads';
 
 export const CATEGORIAS: Categoria[] = [
   {

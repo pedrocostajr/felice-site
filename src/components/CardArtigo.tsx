@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Artigo } from '@/data/blog';
 import { getCategoria } from '@/data/categorias';
 
-const IMG_GERAL = 'https://www.felicelocacoes.com.br/wp-content/uploads/elementor/thumbs/482086144_18055325309109626_2734948481972890222_n-r3o8vcpaw8lc3nucix3977jsme6tbpblu8tijdt2wg.jpg';
+const IMG_GERAL = '/images/blog-geral.jpg';
 
 export const capaArtigo = (a: Artigo) => (a.categoria ? getCategoria(a.categoria)?.imagem : undefined) ?? IMG_GERAL;
 export const rotuloArtigo = (a: Artigo) => (a.categoria ? getCategoria(a.categoria)?.nome : undefined) ?? 'Dicas de obra';

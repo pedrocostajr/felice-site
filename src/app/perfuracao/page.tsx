@@ -39,7 +39,7 @@ export default function Perfuracao() {
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://www.felicelocacoes.com.br/wp-content/uploads/2025/02/bm-perfuracoes-em-concreto-img-01_2x-800x450.jpg"
+          src="/images/perfuracao.jpg"
           alt="Perfuração em concreto"
           className="aspect-[16/10] w-full rounded object-cover"
         />

@@ -41,15 +41,15 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-site flex-wrap items-center justify-between gap-3 px-4 py-4 text-xs">
-          <div className="flex flex-wrap items-center gap-4">
-            <p>© {new Date().getFullYear()} {SITE.nome}. Todos os direitos reservados.</p>
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4">
+            <p>© {new Date().getFullYear()} {SITE.razaoSocial} — CNPJ {SITE.cnpj}</p>
             <span className="text-white/30 hidden sm:inline">|</span>
             <p className="text-white/80">Empresa parceira: <a href={SITE.parceiro.url} target="_blank" rel="noopener" className="text-trator font-bold hover:underline">{SITE.parceiro.nome} ↗</a></p>
           </div>
           <div className="flex gap-4">
             <a href={SITE.redes.instagram} target="_blank" rel="noopener" className="hover:text-trator">Instagram</a>
             <a href={SITE.redes.facebook} target="_blank" rel="noopener" className="hover:text-trator">Facebook</a>
-            <Link href="/privacidade" className="hover:text-trator">Privacidade</Link>
+            <Link href="/privacidade" className="hover:text-trator">Política de Privacidade</Link>
           </div>
         </div>
       </div>
